@@ -31,6 +31,12 @@ const accounts = {
     };
     response.render('signup', viewData);
   },
+  addNewMemberPage(request, response) {
+    const viewData = {
+      title: "Add New Member"
+    };
+    response.render("addNewMember", viewData);
+  },
 
   register(request, response) {
     const user = request.body;
@@ -38,6 +44,14 @@ const accounts = {
     userstore.addUser(user);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
+  },
+  
+  addNewMember(request, response) {
+    const newMember = request.body;
+    newMember.id = uuid.v1();
+    member.addMember(newMember );
+    logger.info(`registering ${newMember .email}`);
+    response.redirect("/trainerdashboard");
   },
 
   authenticate(request, response) {
