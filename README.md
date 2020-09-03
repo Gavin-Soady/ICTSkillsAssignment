@@ -1,2 +1,2 @@
-# ICTSkillsAssignment
-ICT Skills Assignment
+Welcome to the ICT Skills Assignment
+=========================

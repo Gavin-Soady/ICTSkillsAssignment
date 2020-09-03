@@ -1,0 +1,56 @@
+{
+  "playlistCollection": [
+    {
+      "id": "1e6ed5a0-28fe-4527-8ce8-6cb5c800b5be",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "marges playlist",
+      "songs": []
+    },
+    {
+      "id": "07dd66fe-9f8f-456c-944d-48330bde4610",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "homers playlist",
+      "songs": []
+    },
+    {
+      "id": "2e80cc30-ebcc-11ea-8f3e-153ee37c2f6a",
+      "userid": "c07b0b50-ebc7-11ea-bf19-b3f16071dbcd",
+      "title": "Homers playlist",
+      "songs": [
+        {
+          "id": "f65d2ac0-ebcf-11ea-ae55-097520b9d438",
+          "title": "Eat lunch",
+          "artist": "Beethoven",
+          "duration": 9
+        },
+        {
+          "id": "0405b7f0-ebd0-11ea-ae55-097520b9d438",
+          "title": "Eat Dinner",
+          "artist": "Beethoven",
+          "duration": 9
+        }
+      ],
+      "duration": 9
+    },
+    {
+      "id": "48dd2650-ebcc-11ea-8f3e-153ee37c2f6a",
+      "userid": "40064570-ebcc-11ea-8f3e-153ee37c2f6a",
+      "title": "Marges Playlist",
+      "songs": []
+    },
+    {
+      "id": "32124630-ec62-11ea-9afb-452ab9a71b6c",
+      "userid": "8d84bd00-ebc6-11ea-bf19-b3f16071dbcd",
+      "title": "Bangin Chewns",
+      "songs": [
+        {
+          "id": "3cab7080-ec62-11ea-9afb-452ab9a71b6c",
+          "title": "Make Lunch",
+          "artist": "Beethoven",
+          "duration": 9
+        }
+      ],
+      "duration": 9
+    }
+  ]
+}

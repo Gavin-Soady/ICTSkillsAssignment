@@ -1,0 +1,26 @@
+{{> welcomemenu id='login' }}
+
+<section class="ui center aligned middle aligned">
+    <div class="ui middle aligned grid">
+        <div class="eight wide column left aligned">
+            <form class="ui segment stacked form" action="/authenticate" method="POST">
+                <h1 class = "ui header"> Member Log in</h1>
+
+                <div class="field">
+                    <label>Email</label>
+                    <input placeholder="joebloggs@gmail.com" type="text" name="email">
+                </div>
+
+                <div class="field">
+                    <label>Password</label>
+                    <input placeholder="" type="password" name="password">
+                </div>
+
+                <button class="ui blue submit button left aligned">Submit</button>
+            </form>
+        </div>
+        <div class="eight wide column">
+            <img class = "ui image" src="http://assignment2gavinsoady.herokuapp.com/public/images/seticon.jpg">
+        </div>
+    </div>
+</section>
