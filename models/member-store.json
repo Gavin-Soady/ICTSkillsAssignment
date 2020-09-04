@@ -1,0 +1,28 @@
+{
+  "members": [
+    {
+      "name": "Amy Donohoe",
+      "gender": "Female",
+      "email": "amyd415@gmail.com",
+      "password": "password",
+      "address": "14 Harbour View",
+      "height": "164",
+      "startingWeight": "72",
+      "id": "c2e30810-eddf-11ea-9e64-c3d5c06d8934",
+      "numOfAssessments": 0,
+      "memberGoal": "No Goal Set Yet",
+      "goal": "Lose Weight"
+    },
+    {
+      "name": "Gavin Soady",
+      "gender": "Male",
+      "email": "gsoady20@gmail.com",
+      "password": "password",
+      "address": "14 Harbour View",
+      "height": "183",
+      "startingWeight": "88",
+      "goal": "Build Muscle",
+      "id": "ed602a70-ee23-11ea-ae06-4fbf7ef14354"
+    }
+  ]
+}

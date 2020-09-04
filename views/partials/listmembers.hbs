@@ -1,0 +1,27 @@
+
+
+
+{{#each members}}
+
+    <section class="ui segment">
+        <div class="ui grid">
+        <!---->
+
+                <div class = "twelve wide column">
+                    <a href="/showMember/{{id}}" methods="post" >
+                    <h2 class="ui header blue">{{name}}</h2>
+                    <h3 class="ui header black">{{numOfAssessments}} Assessments </h3>
+                    </a>
+                </div>
+
+                <div class = "four wide column right aligned middle aligned">
+                    <a href="/accounts/deleteMember/{{id}}" class="ui icon button">
+                        <i class="icon trash"></i>
+                    </a>
+                </div>
+        </div>
+
+    </section>
+
+{{/each}}
+

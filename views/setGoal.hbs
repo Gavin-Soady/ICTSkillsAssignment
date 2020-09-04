@@ -1,0 +1,18 @@
+{{> menu id="setgoal"}}
+
+<form class="ui stacked segment form" action="/setgoal" method="POST">
+    <div class="ui segment">
+        <h1>Primary Fitness Goal</h1>
+        <input type="radio" id="lose-weight" name="goal" value="Lose Weight" checked required>
+        <label for="lose weight"><span class="ui large text">Lose weight</span></label>
+        <br>
+        <br>
+        <input type="radio" id="build-muscle" name="goal" value="Build Muscle">
+        <label for="build muscle"><span class="ui large text">Build muscle</span></label>
+        <br>
+        <br>
+        <input type="radio" id="tone-up" name="goal" value="Tone Up">
+        <label for="other"><span class="ui large text">Tone up</span></label>
+    </div>
+    <button class="ui blue submit button">Set Goal</button>
+</form>

@@ -1,3 +1,6 @@
+
+{{#each assessments}}
+    <section class = "ui segment">
 <table class="ui celled table">
     <thead>
     <tr>
@@ -11,11 +14,10 @@
         <th>Hips</th>
         <th>Trend</th>
         <th>Comment</th>
-        <th> </th>
     </tr>
     </thead>
     <tbody>
-    {{#each assessments}}
+
         <tr>
             <td>
                 {{date}}
@@ -49,16 +51,21 @@
                     <i class="ui red thumbs down outline icon large"></i>
 
                 {{/if}}
+
             </td>
             <td>
                 {{comment}}
             </td>
-            <td>
-                <a href="/dashboard/deleteassessment/{{id}}" class="ui icon button">
-                    <i class="icon trash"></i>
-                </a>
-            </td>
         </tr>
-    {{/each}}
+
     </tbody>
 </table>
+<form class="ui form" action="/assessment/{{../member.id}}/addcomment/{{id}}" method="POST">
+    <div class="field focus small">
+        <label>Comment</label>
+        <textarea class= "input" rows="2" placeholder="Please enter comment" type="text" name="comment"></textarea>
+    </div>
+    <button class="ui blue submit button">Update</button>
+</form>
+    </section>
+{{/each}}

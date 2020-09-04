@@ -1,22 +1,22 @@
-<form class="ui raised segment form" action="/dashboard/addassessment" method="POST">
+<form class="ui raised segment form" action="/trainerdashboard/addassessment/{{member.id}}" method="POST">
     <div class="three fields">
         <div class="field">
             <label>Weight</label>
-            <input placeholder="Weight" type="text" name="weight" required>
+            <input placeholder="Weight" type="text" name="weight"  required>
         </div>
         <div class="field">
             <label>Chest</label>
-            <input placeholder="Chest" type="text" name="chest" >
+            <input placeholder="Chest" type="text" name="chest">
         </div>
         <div class="field">
             <label>Thigh</label>
-            <input placeholder="Thigh" type="text" name="thigh" >
+            <input placeholder="Thigh" type="text" name="thigh">
         </div>
     </div>
     <div class="three fields">
         <div class="field">
             <label>Upper Arm</label>
-            <input placeholder="Upper Arm" type="text" name="upperArm" >
+            <input placeholder="Upper Arm" type="text" name="upperArm">
         </div>
         <div class="field">
             <label>Waist</label>

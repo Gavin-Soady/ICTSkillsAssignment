@@ -1,0 +1,87 @@
+
+    <div class="ui center aligned middle aligned grid segment">
+        <div class="three wide column">
+            <i class="ui user icon huge"></i>
+            <p class = "top-text">
+                <p>
+                    <span class="ui large text">
+                          {{member.name}}
+                    </span>
+                </p>
+            </p>
+        </div>
+        <div class="three wide column">
+            {{#if goalReached }}
+                <i class="ui green smile icon huge"></i>
+                <p class = "top-text">
+                <p>
+                      <span class="ui large text">
+                          Goal Achieved
+                      </span>
+                <p>
+                </p>
+            {{else}}
+                <i class="ui red frown icon huge"></i>
+                <p class = "top-text">
+                <p>
+                      <span class="ui large text">
+                           Goal not  Achieved
+                      </span>
+            <p>
+            {{/if}}
+        </div>
+
+        <div class="four wide column">
+            {{#if isIdealWeight }}
+            <i class="ui green dashboard icon huge"></i>
+                <p class = "top-text">
+                    <p>
+                      <span class="ui large text">
+                          Ideal Weight
+                      </span>
+                    <p>
+                </p>
+            {{else}}
+                <i class="ui red dashboard icon huge"></i>
+                <p class = "top-text">
+                <p>
+                      <span class="ui large text">
+                           Not Ideal Weight
+                      </span>
+                <p>
+            {{/if}}
+
+        </div>
+        <div class="three wide column">
+            <div class="ui grid">
+                <div class="eight wide column">
+                    <i class="ui huge heartbeat icon right aligned "></i>
+                </div>
+                <div class="six wide column ">
+                    <p></p>
+                    <span class="ui huge text bmi-format" >{{BMI}}</span>
+                    <p></p>
+
+                </div>
+
+            </div>
+            <p>
+                <p class="ui large text aligned right">
+                    <span class="ui large text aligned right">
+                              BMI
+                    </span>
+                </p>
+            </p>
+
+        </div>
+        <div class="three wide column">
+            <i class="ui user md icon huge"></i>
+            <p class = "top-text">
+                <p>
+                    <span class="ui large text">
+                        {{BMICategory}}
+                    </span>
+                </p>
+            </p>
+        </div>
+    </div>

@@ -1,5 +1,26 @@
-{{> welcomemenu }}
+<section class="ui container">
+    <nav class="ui menu">
+        <header class="ui header item"> <a href="/"> Play Gym </a></header>
+        <div class="right menu">
+            <a id="signup" class="item" href="/signup"> Signup  </a>
+            <a id="login" class="item" href="/login">  Login   </a>
+        </div>
+    </nav>
 
-<section class="ui center aligned middle aligned segment">
-  <p> Welcome to Super Gym </p>
+    <script>
+        $("#").addClass("active item");
+    </script>
+    <div class="ui two column middle aligned grid basic segment">
+        <div class="column">
+            <h1 class="ui header">
+                BMI Tracker
+            </h1>
+            <p>
+                Fill in your assessments week by week and track your BMI. Trainers will comment on your progress and encourage you to keep going.
+            </p>
+        </div>
+        <div class="column">
+            <img class="ui image" src="https://cdn.glitch.com/5bd701b6-f90d-4797-acd7-60c5a19f8013%2Fabout.jpg?v=1597750224962">
+        </div>
+    </div>
 </section>
