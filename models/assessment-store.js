@@ -25,7 +25,9 @@ const assessmentStore = {
     this.store.add(this.collection, assessment);
     this.store.save();
   },
-
+  updateAssessment() {
+    this.store.save();
+  },
   removeAssessment(id) {
     const assessment = this.getAssessment(id);
     this.store.remove(this.collection, assessment);

@@ -69,7 +69,7 @@ const trainerDashboard = {
 
     let memberAssessment =  assessmentStore.getAssessment(request.params.id);
     memberAssessment.comment = request.body.comment;
-    logger.info("Whats in the Params??", request.params.id);
+    assessmentStore.updateAssessment();
     response.redirect("/showmember/"+request.params.memberid);
   }
   ,

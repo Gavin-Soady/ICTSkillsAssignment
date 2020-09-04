@@ -180,7 +180,8 @@
       "upperArm": 0,
       "waist": 0,
       "hips": 0,
-      "trend": false
+      "trend": false,
+      "comment": "Forever Comment?"
     }
   ]
 }
