@@ -5,7 +5,6 @@ const logger = require("../utils/logger");
 const assessmentStore = require("../models/assessment-store.js");
 const member = require("../models/member.js");
 const gymUtility = require("../models/gym-utility.js");
-const HandleBars = require("express-handlebars");
 
 const uuid = require("uuid");
 
@@ -67,9 +66,8 @@ const dashboard = {
   },
   setMemberGoal(request, response){
     const loggedInMember = accounts.getCurrentMember(request);
-    gymUtility.setGoal(loggedInMember.id,request.body.goal);
-    gymUtility.isGoalReached(request.params.id);
-    const viewData={}
+    gymUtility.setGoal(loggedInMember.id, request.body.goal);
+    //gymUtility.isGoalReached(loggedInMember.id);
     response.redirect("/dashboard");
   }
 };

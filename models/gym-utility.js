@@ -78,13 +78,12 @@ const gymUtilities = {
   },
   isGoalReached(memberID){
     let isGoalReached=false;
-    const member1 = member.getMemberById(memberID);
-    if(member1.isGoalReached === 'yes'){
+    const setMemberGoal = member.getMemberById(memberID);
+    if(setMemberGoal.isGoalReached === 'yes'){
       isGoalReached=true;
     }
     return isGoalReached;
   }
-
 
 };
 

@@ -1,64 +1,67 @@
-<table class="ui celled table">
-    <thead>
-    <tr>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Weight</th>
-        <th>Chest</th>
-        <th>Thigh</th>
-        <th>Upper Arm</th>
-        <th>Waist</th>
-        <th>Hips</th>
-        <th>Trend</th>
-        <th>Comment</th>
-        <th> </th>
-    </tr>
-    </thead>
-    <tbody>
-    {{#each assessments}}
+
+<section class = "ui  raised segment">
+    <table class="ui celled table">
+        <thead>
         <tr>
-            <td>
-                {{date}}
-            </td>
-            <td>
-                {{time}}
-            </td>
-            <td>
-                {{weight}}
-            </td>
-            <td>
-                {{chest}}
-            </td>
-            <td>
-                {{thigh}}
-            </td>
-            <td>
-                {{upperArm}}
-            </td>
-            <td>
-                {{waist}}
-            </td>
-            <td>
-                {{hips}}
-            </td>
-            <td>
-                {{#if trend }}
-                    <i class="ui green thumbs up outline icon large"></i>
-
-                {{else}}
-                    <i class="ui red thumbs down outline icon large"></i>
-
-                {{/if}}
-            </td>
-            <td>
-                {{comment}}
-            </td>
-            <td>
-                <a href="/dashboard/deleteassessment/{{id}}" class="ui icon button">
-                    <i class="icon trash"></i>
-                </a>
-            </td>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Trend</th>
+            <th>Comment</th>
+            <th> </th>
         </tr>
-    {{/each}}
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+        {{#each assessments}}
+            <tr>
+                <td>
+                    {{date}}
+                </td>
+                <td>
+                    {{time}}
+                </td>
+                <td>
+                    {{weight}}
+                </td>
+                <td>
+                    {{chest}}
+                </td>
+                <td>
+                    {{thigh}}
+                </td>
+                <td>
+                    {{upperArm}}
+                </td>
+                <td>
+                    {{waist}}
+                </td>
+                <td>
+                    {{hips}}
+                </td>
+                <td>
+                    {{#if trend }}
+                        <i class="ui green thumbs up outline icon large"></i>
+
+                    {{else}}
+                        <i class="ui red thumbs down outline icon large"></i>
+
+                    {{/if}}
+                </td>
+                <td>
+                    {{comment}}
+                </td>
+                <td>
+                    <a href="/dashboard/deleteassessment/{{id}}" class="ui icon button">
+                        <i class="icon trash"></i>
+                    </a>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</section>
